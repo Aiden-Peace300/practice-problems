@@ -1,4 +1,5 @@
 /**
+ * LINK: https://leetcode.com/problems/merge-sorted-array/submissions/?envType=study-plan-v2&envId=top-interview-150
  * @param {number[]} nums1
  * @param {number} m
  * @param {number[]} nums2
