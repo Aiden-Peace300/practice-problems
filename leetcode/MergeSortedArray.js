@@ -1,5 +1,4 @@
 /**
- * LINK: https://leetcode.com/problems/merge-sorted-array/?envType=study-plan-v2&envId=top-interview-150
  * @param {number[]} nums1
  * @param {number} m
  * @param {number[]} nums2
@@ -8,24 +7,33 @@
  */
 var merge = function(nums1, m, nums2, n) {  
     const newNums = [];
+    let counter = 0;
 
+    // populating newNums with all nums1 elements 
     do {
-      if(nums1[nums1.length - 1] !== 0) {
-        newNums.push(nums1[nums1.length - 1]);
-      }
-
+      newNums.push(nums1[counter]);
+      counter++;
+    } while(newNums.length <= m);
+  
+    // emptying nums1 array completely! 
+    do {
       nums1.pop();
     } while(nums1.length !== 0);
-  
+
+    // pushing elements from newNums into nums1
     for(let i = 0; i < m; i++) {
        nums1.push(newNums[i]);
     }
  
-    for(let i = 0; i < n; i++) {
-      if(nums2[i] !== 0){
-        nums1.push(nums2[i]);
-      }
+    // pushing elements from nums2 into nums1
+    for(let j = 0; j < n; j++) {
+       nums1.push(nums2[j]);
     }
 
-  return nums1.sort();
+    // ensuring negative numbers are also sorted appropriately
+    nums1.sort((a, b) => {
+      return a - b;
+    });
+
+  return nums1;
 };
