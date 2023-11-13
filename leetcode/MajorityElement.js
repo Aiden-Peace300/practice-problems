@@ -4,6 +4,7 @@
  * @return {number}
  *
  */
+// comment
 var majorityElement = function(nums) {
     const counts = {}; 
     for(let i = 0; i < nums.length; i++) {
