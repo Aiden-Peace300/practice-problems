@@ -8,7 +8,7 @@ solution(inputArray) = 21.
 7 and 3 produce the largest product
 */
 
-// 
+// BIG O FOR solution FUNCTION IS O(N) AKA LINEAR TIME
 
 function solution(inputArray) {
    let largetProduct = inputArray[0] * inputArray[1];;
