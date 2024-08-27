@@ -4,6 +4,8 @@ Given a year, return the century it is in. The first century spans from the year
 including the year 100, the second - from the year 101 up to and including the year 200, etc.
 */
 
+// BIG O FOR solution FUNCTION IS O(1) AKA CONSTANT TIME
+
 function solution(year) {
    if (year <= 0) {
        return -1; // Invalid year
