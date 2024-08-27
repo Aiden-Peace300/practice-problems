@@ -1,3 +1,12 @@
+/*
+For inputString = "aabaa", the output should be
+solution(inputString) = true;
+For inputString = "abac", the output should be
+solution(inputString) = false;
+For inputString = "a", the output should be
+solution(inputString) = true.
+*/
+
 // BIG O FOR solution FUNCTION IS O(N) AKA LINEAR TIME
 
 function solution(inputString) {
