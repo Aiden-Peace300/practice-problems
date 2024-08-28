@@ -15,7 +15,6 @@ solution(n) = 13.
 
 
 // BIG O FOR solution FUNCTION IS O(1) AKA CONSTANT TIME
-
 function solution(n) {
     return (n * n) + ((n-1) * (n-1));
 }
